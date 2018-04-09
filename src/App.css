@@ -13,6 +13,49 @@ nav.main-nav {
   display: none;
 }
 
+.square {
+  width: 100px;
+  height: 100px;
+  background: violet;
+}
+
+main {
+  padding: 50px;
+}
+
+.animation1 {
+  animation-name: change-color-size;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.animation2 {
+  animation-name: rotate-change-opacity;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes rotate-change-opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.1;
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes change-color-size {
+
+
+  100% {
+    width: 200px;
+    background: aqua;
+  }
+}
+
 /*How to split items in navigation bar<-- flex display; */
 @media (min-width: 992px) {
   nav.main-nav {
