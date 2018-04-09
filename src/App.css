@@ -4,7 +4,7 @@ body {
 nav.main-nav {
   background-color: black;
   color: white;
-  font-family:  Impact;
+  font-family:  'Avenir';
   display: flex;
   justify-content: space-between;
   padding: 32px 100px;
@@ -55,6 +55,22 @@ main {
     background: aqua;
   }
 }
+
+.drawer {
+  position: fixed;
+  transition: 1s;
+  top: 0;
+  right: -200px;
+  bottom: 0;
+  background: black;
+  color: white;
+}
+
+.open {
+  right: 0;
+  width: 200px;
+}
+
 
 /*How to split items in navigation bar<-- flex display; */
 @media (min-width: 992px) {
