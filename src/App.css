@@ -1,0 +1,19 @@
+body {
+  background: aliceblue;
+}
+nav.main-nav {
+  background-color: black;
+  color: white;
+  font-family:  Impact;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 100px;
+}
+/*How to split items in navigation bar<-- flex display; */
+@media (min-width: 992px) {
+  nav.main-nav {
+    background: transparent;
+    color: black;
+    padding: 10px;
+  }
+}
