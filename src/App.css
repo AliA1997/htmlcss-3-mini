@@ -9,11 +9,21 @@ nav.main-nav {
   justify-content: space-between;
   padding: 32px 100px;
 }
+.desktop {
+  display: none;
+}
+
 /*How to split items in navigation bar<-- flex display; */
 @media (min-width: 992px) {
   nav.main-nav {
     background: transparent;
-    color: black;
-    padding: 10px;
+    color: #333;
+    padding: 16px;
+  }
+  .desktop {
+    display: initial;
+  }
+  .phone {
+    display: none;
   }
 }
